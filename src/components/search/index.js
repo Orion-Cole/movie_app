@@ -9,7 +9,7 @@ const Search = (props) => {
     const [searchString, setSearchString] = useState('');
 
     useEffect(() => {
-        //make this movie call randommly choose between 10 movies
+        //make this movie call randomly choose between 10 movies
         if (isFirstRender.current === true) {
             let num = Math.floor(Math.random() * (9 - 0 + 1)) + 0; //num between 0-9
             console.log(num);
